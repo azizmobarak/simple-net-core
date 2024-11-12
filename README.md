@@ -1,41 +1,44 @@
 # Product Cluster Test Project
 
-This project demonstrates a simple Product Cluster using MongoDB for database management, with REST API routes for adding and retrieving products by exact price. The project is developed using either .NET Core or Node.js (Express) for backend services and a minimal frontend using either HTML or React.
+This project demonstrates a simple product management system using MongoDB for database storage and REST API routes to add and retrieve products by exact price. The backend is built with either .NET Core or Node.js (Express), while the frontend can be a basic HTML template or a React app.
 
 ## Prerequisites
 
-- MongoDB (with a product cluster created)
-- URL connection string to the MongoDB Database
+- MongoDB with a created cluster for products
+- Database connection URL string for MongoDB
 - Either .NET Core SDK or Node.js installed
 
 ## Project Setup
 
-1. **Create a MongoDB Product Cluster**: 
-   - Set up a MongoDB cluster and obtain the connection URL.
+### Step 1: MongoDB Product Cluster
+- Set up a MongoDB cluster and obtain the connection URL.
 
-2. **Connect to Database**:
-   - Use the MongoDB connection URL string in your project to link the database.
+### Step 2: Connect to the Database
+- Use the MongoDB connection URL string in the project's configuration file to link the database.
 
-3. **Product Structure**:
-   - Each product document in MongoDB will have the following fields:
-     - `name`: `String`
-     - `price`: `Number`
-     - `added_at`: `Date`
+### Step 3: Product Structure
+Each product document in MongoDB should include:
+  - `name`: `String`
+  - `price`: `Number`
+  - `added_at`: `Date`
 
-4. **API Routes**:
-   - **GET /product/:price**: Retrieve all products with an exact price.
-   - **POST /product**: Add a new product to the cluster.
+### Step 4: API Routes
+- **GET /product/:price**: Retrieve all products with an exact price.
+- **POST /product**: Add a new product to the cluster.
 
-5. **Frontend**:
-   - A simple form to add new products with fields:
-     - **Product Name**
-     - **Product Price**
-   - A **Submit** button to add the product.
-   - A table view displaying:
-     - **Product Name**
-     - **Product Price**
-     - **Product Created Date**
-   - A search input field above the table to filter products by exact price.
+### Step 5: Frontend UI
+Create a form and a table display for products:
+- Form with:
+  - **Product Name** input
+  - **Product Price** input
+  - **Submit** button
+- Table display with:
+  - **Product Name**
+  - **Product Price**
+  - **Created Date**
+- Include a search field above the table to filter products by exact price.
+
+---
 
 ## Instructions
 
